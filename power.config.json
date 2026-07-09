@@ -1,0 +1,35 @@
+{
+  "version": "1.0",
+  "appId": "01c16e11-c3e8-468a-83d7-5ebf1ae84b2e",
+  "appDisplayName": "YAMLVaultJP",
+  "region": "prod",
+  "environmentId": "c1d27b52-076a-e87d-93a3-27162ff59107",
+  "description": " ",
+  "buildPath": "./dist",
+  "buildEntryPoint": "index.html",
+  "localAppUrl": "http://localhost:3000",
+  "logoPath": "Default",
+  "connectionReferences": {
+    "617356c1-bbc4-48e5-aeac-22255641048c": {
+      "id": "/providers/Microsoft.PowerApps/apis/shared_sharepointonline",
+      "displayName": "SharePoint",
+      "dataSources": [
+        "yamlvault",
+        "yamlcategories"
+      ],
+      "dataSets": {
+        "https://cardinalhealth.sharepoint.com/sites/YAMLvault": {
+          "dataSources": {
+            "yamlvault": {
+              "tableName": "YAMLvault"
+            },
+            "yamlcategories": {
+              "tableName": "YAMLcategories"
+            }
+          }
+        }
+      }
+    }
+  },
+  "databaseReferences": {}
+}
